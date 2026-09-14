@@ -2,7 +2,7 @@
 
 Projeto de portfólio que faz web scraping do [fakenamegenerator.com](https://www.fakenamegenerator.com),
 coleta **nome, email e telefone** gerados, salva os dados em um arquivo CSV e envia esse
-arquivo por email. A execução é **manual** — você roda o script quando quiser.
+arquivo por email.
 
 ## Como funciona
 
@@ -36,7 +36,7 @@ Edite o `.env` com seu servidor SMTP. Para Gmail:
 - `SMTP_PASSWORD` deve ser uma **senha de app** (não a senha normal da sua conta Google).
   Gere uma em: https://myaccount.google.com/apppasswords
 
-> ⚠️ O arquivo `.env` nunca deve ser enviado ao GitHub — ele já está no `.gitignore`.
+> O arquivo `.env` já está no `.gitignore`.
 
 ### 3. Executar
 
@@ -61,21 +61,6 @@ webscraper-fakename/
 ├── .gitignore
 └── README.md
 ```
-
-## Como subir este projeto no GitHub
-
-```bash
-cd webscraper-fakename
-git init
-git add .
-git commit -m "Primeiro commit: web scraper com envio de CSV por email"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/webscraper-fakename.git
-git push -u origin main
-```
-
-Troque `SEU_USUARIO` pelo seu usuário do GitHub. Se o repositório ainda não existir,
-crie um novo repositório vazio em https://github.com/new antes do `git push`.
 
 ## Aviso
 
